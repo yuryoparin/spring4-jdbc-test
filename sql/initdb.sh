@@ -19,7 +19,7 @@ while test $# -gt 0; do
              echo "--help                show brief help"
              echo "-d                    database name, default=flashbackr-test"
              echo "-s                    schema name, default=all"
-	         echo "-h                    host, default=localhost"
+             echo "-h                    host, default=localhost"
              echo "--drop-all            drops all entities, default=0 (false)"
              echo "--no-data             don't run initial-data.sql"
              exit 0
@@ -125,9 +125,9 @@ done
 # make initdb.sql file in the $TARGET directory
 echo -e "/**" > ${TARGET}/initdb.sql
 if [ ${WITH_DROPS} -eq 1 ]; then
-  echo -e "*   Drop-Create all database schemas for flashbackr project" >> ${TARGET}/initdb.sql;
+  echo -e "*   Drop-Create all database schemas for the project" >> ${TARGET}/initdb.sql;
 else
-  echo -e "*   Update all database schemas for flashbackr project" >> ${TARGET}/initdb.sql;
+  echo -e "*   Update all database schemas for the project" >> ${TARGET}/initdb.sql;
 fi
 echo -e "*/\n" >> ${TARGET}/initdb.sql
 
