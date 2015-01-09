@@ -3,7 +3,7 @@
 # default values
 USER="postgres"
 HOST="localhost"
-DBNAME="spring-test"
+DBNAME="spring-maven-test"
 SCHEMA="all"
 WITH_DROPS=0
 INITIAL_DATA=true
